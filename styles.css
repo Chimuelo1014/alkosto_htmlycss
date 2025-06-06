@@ -8,11 +8,14 @@ p{
     padding: 0;
     
 }
-
+nav{}
+li{
+  list-style: none;
+  
+}
 .grid__container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
     background-color: rgb(241, 241, 241);
 }
 
@@ -101,7 +104,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 54%;
+    height: 70%;
     max-width: none;
     max-height: none;
 
@@ -118,3 +121,55 @@ header{
     box-sizing: border-box;
     padding: 4px;
 }
+
+.categorias__item24{
+  border: 2px solid #eb5b25;
+  color: #eb5b25;
+  background-color: #eb5a2511 !important;
+}
+
+.add1{
+  display: flex;
+  padding: 40px;
+  
+}
+
+  
+
+.heroitem__items{
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 0px 40px;
+}
+.items__item a{
+  display: flex;
+  width: auto;
+  height: 40px;
+  flex-direction: row;
+  gap:20px;
+
+}
+.items__item a p {
+  display: flex;
+  align-self: center;
+}
+
+.homeoferts{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 25px 35px 40px;
+  margin-bottom: 35px;
+  gap: 10px;
+}
+.celularesdescuento{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+}
+
