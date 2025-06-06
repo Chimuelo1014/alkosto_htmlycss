@@ -2,30 +2,41 @@
     --background-color-principal: #004797;
     --background-color-nav-bar: white;
 }
+p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
 
-.grid-container{
+.grid__container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr;
+    background-color: rgb(241, 241, 241);
 }
 
+/* .grid__container *{
+  background-color:;
+  border: solid 2px ;
+} */
 
 
 header{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: var(--background-color-principal);
-    border-bottom: 10px solid orangered;
+    background-color: var(--background-color-principal) ;
+    border-bottom: 10px solid orangered; 
 }
 
-.logo{
+.container__logo{
     display: flex;
     justify-content: center;
     height: 100px;
     padding: 9px;
 }
 
-.grid-container__ul, .nav-principal{
+.nav__ul, .principal__nav{
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -33,17 +44,22 @@ header{
 
 }
 
-.grid-container__nav{
+.container__nav{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-.nav__a, .nav-item__a{
+.ul__a, .principal__item{
     color: aliceblue;
     text-decoration: none;
 }
+.main{
+    display: grid;
+   
+    
+    }
 
-.nav-principal{
+.nav__principal{
    display: flex;
    flex-direction: row; 
    gap: 10px; 
@@ -51,9 +67,54 @@ header{
     justify-content: space-between;
     margin: 5px 50px 0px 50px;  
 }
-.nav-item__a{
+.principal__item__a{
     color: var(--background-color-principal);
+
 
    
 
+}
+
+
+
+.main__home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    padding: 40px;
+
+}
+
+.home__carrusel{
+
+}
+
+.home__categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.home__categorias img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54%;
+    max-width: none;
+    max-height: none;
+
+}
+.home__categorias div{
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:93.9844px;
+    height: 96px;
+    box-sizing: border-box;
+    padding: 4px;
 }
