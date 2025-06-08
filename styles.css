@@ -8,6 +8,9 @@ p{
     padding: 0;
     
 }
+ul{
+  list-style: none;
+}
 .lista-hiperoferta{
     background-color: rgba(0, 158, 163, 0.384);
     padding: 10px;
@@ -212,6 +215,20 @@ header {
   color: #eb5b25;
   background-color: #eb5a2511 !important;
 }
+/* estas dos lo que hace es lo de sobresalir la imagen */
+/* El símbolo > en CSS es un combinador de hijo directo. Sirve para aplicar estilos solo a los elementos que son hijos directos del selector anterior. */
+
+/* Selecciona la etiqueta <img> que esté dentro de un <div> que sea hijo directo de .home__categorias, cuando ese <div> está en estado :hover. */
+
+.home__categorias > div:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.home__categorias img {
+    transition: transform 0.3s ease;
+}
+/* hasta aqui */
 
 .add1{
   display: flex;
@@ -255,7 +272,38 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  gap: 10px;
+  margin: 0px 35px;
   
+}
+
+.decuentoscelulares{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+
+}
+.descuentoscelulares__titulo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+  color: var(--background-color-principal);
+  font-family: arial, sans-serif;
+  font-size: 18px;
+}
+.decuentoscelulares__vermas{
+  width: 100%;
+  padding-right: 35px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+.decuentoscelulares__vermas{
+  color:#eb5b25
 }
 
 
@@ -388,6 +436,7 @@ header {
     font-size: 1.2rem;
   }
 }
+
 img {
   max-width: 100%;
   height: auto;
