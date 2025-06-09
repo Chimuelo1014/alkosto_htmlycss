@@ -1,3 +1,15 @@
+##para sobresalir imagen
+.home__categorias > div:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.home__categorias img {
+    transition: transform 0.3s ease;
+}
+
+
+
 El símbolo `>` en CSS es un **combinador de hijo directo**. Sirve para aplicar estilos **solo a los elementos que son hijos directos** del selector anterior.
 
 ### En tu caso:
